@@ -6,99 +6,74 @@
   <meta name="description" content="Join the waitlist for Elysian Spark — the AI mentor that helps you grow with personalized learning, habits, and mindset transformation." />
   <title>Elysian Spark - AI-Powered Personal Growth</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 30px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h1 {
-      color: #2c3e50;
-      font-size: 2.2em;
-    }
-    h2 {
-      color: #3498db;
-      font-weight: normal;
-      font-size: 1.4em;
-    }
-    h3 {
-      margin-top: 40px;
-      color: #2c3e50;
-    }
-    p {
-      color: #555;
-    }
-    .form {
-      margin-top: 30px;
-    }
-    input[type="email"] {
-      padding: 10px;
-      width: 60%;
-      max-width: 300px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      padding: 10px 20px;
-      background: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
-      margin-left: 10px;
-    }
-    button:hover {
-      background: #2980b9;
-    }
-    .subtle {
-      font-size: 0.8em;
-      color: #777;
-      margin-top: 10px;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 0.8em;
-      color: #999;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Configure Tailwind to use the Inter font
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
 </head>
-<body>
-  <div class="container">
-    <h1>Stop Guessing. Start Growing.</h1>
-    <h2>Coming Soon to the UK: Your AI-Powered Path to Real Growth</h2>
+<body class="font-inter bg-gray-100 text-gray-800 leading-relaxed antialiased flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+  <div class="container bg-white shadow-xl rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 max-w-2xl w-full text-center">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+      Stop Guessing. Start Growing.
+    </h1>
+    <h2 class="text-xl sm:text-2xl text-blue-600 font-semibold mb-6">
+      Coming Soon to the UK: Your AI-Powered Path to Real Growth
+    </h2>
 
-    <p>Tired of generic courses and development plans that don't <em>get</em> you? We understand. Unlocking your true potential requires a path as unique as you are.</p>
+    <p class="text-base sm:text-lg text-gray-700 mb-4 max-w-prose mx-auto">
+      Tired of generic courses and development plans that don't <em class="font-semibold">get</em> you? We understand. Unlocking your true potential requires a path as unique as you are.
+    </p>
 
-    <p><strong>Elysian Spark</strong> is building a revolutionary AI mentor. It learns who you are and crafts a dynamic, truly personalized journey to help you master the skills and mindset for <em>your</em> future.</p>
+    <p class="text-base sm:text-lg text-gray-700 mb-6 max-w-prose mx-auto">
+      <strong class="font-bold text-blue-700">Elysian Spark</strong> is building a revolutionary AI mentor. It learns who you are and crafts a dynamic, truly personalized journey to help you master the skills and mindset for <em class="font-semibold">your</em> future.
+    </p>
 
-    <p><em>Join 240+ others waiting for the future of personal growth.</em></p>
+    <p class="text-sm sm:text-base text-gray-600 italic mb-8">
+      Join 240+ others waiting for the future of personal growth.
+    </p>
 
-    <div class="form">
-      <h3>Be the first to know.</h3>
-      <p>Enter your email below to join our exclusive waitlist for early access and insights:</p>
+    <div class="form bg-blue-50 p-6 rounded-lg shadow-inner">
+      <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+        Be the first to know.
+      </h3>
+      <p class="text-sm sm:text-base text-gray-700 mb-6">
+        Enter your email below to join our exclusive waitlist for early access and insights:
+      </p>
 
-      <form action="https://formspree.io/f/xrbqwdbv" method="POST">
-        <label for="email" style="display: none;">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email address" required />
-        <button type="submit">Join Waitlist</button>
+      <form action="https://formspree.io/f/xrbqwdbv" method="POST" class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <label for="email" class="sr-only">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+          required
+          class="flex-grow w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out text-base"
+        />
+        <button
+          type="submit"
+          class="w-full sm:w-auto px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          Join Waitlist
+        </button>
       </form>
 
-      <p class="subtle">No spam. No fluff. Just real insight.</p>
+      <p class="subtle text-xs sm:text-sm text-gray-500 mt-4">
+        No spam. No fluff. Just real insight.
+      </p>
     </div>
 
-    <div class="footer">
+    <div class="footer text-xs sm:text-sm text-gray-500 mt-10 pt-6 border-t border-gray-200">
       &copy; 2025 Elysian Spark - All rights reserved.
     </div>
   </div>
